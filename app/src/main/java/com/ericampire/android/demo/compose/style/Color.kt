@@ -1,4 +1,4 @@
-package com.ericampire.android.demo.compose.ui.style
+package com.ericampire.android.demo.compose.style
 
 import androidx.compose.ui.graphics.Color
 
