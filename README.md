@@ -1,4 +1,4 @@
-# demo-compose
+# Project Management
 ## Screenshots 
 
 A simple UI of a project management application made in jetpack compose.
