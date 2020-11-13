@@ -1,4 +1,4 @@
-package com.ericampire.android.demo.compose.ui
+package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.Box
@@ -7,7 +7,6 @@ import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.model.Status

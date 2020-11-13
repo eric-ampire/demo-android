@@ -1,4 +1,4 @@
-package com.ericampire.android.demo.compose.ui
+package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.Text
 import androidx.compose.foundation.background
@@ -8,14 +8,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.Divider
-import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.VectorAsset
 import androidx.compose.ui.unit.dp
 import androidx.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.model.Task

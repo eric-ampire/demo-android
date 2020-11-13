@@ -1,11 +1,10 @@
-package com.ericampire.android.demo.compose.ui
+package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.Text
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AttachEmail
-import androidx.compose.material.icons.rounded.Attachment
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier

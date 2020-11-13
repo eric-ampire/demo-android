@@ -1,9 +1,8 @@
-package com.ericampire.android.demo.compose.ui
+package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.Text
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.ui.tooling.preview.Preview

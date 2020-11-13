@@ -1,4 +1,4 @@
-package com.ericampire.android.demo.compose.ui
+package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.ScrollableColumn
 import androidx.compose.runtime.Composable
