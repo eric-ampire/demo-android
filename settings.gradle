@@ -1,2 +1,4 @@
 rootProject.name = "demo-compose"
 include ':app'
+include ':food-recipe'
+include ':compose-style'
