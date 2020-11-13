@@ -2,13 +2,17 @@ package com.ericampire.android.demo.compose
 
 
 object Version {
-    const val compose = "1.0.0-alpha05"
+    const val compose = "1.0.0-alpha07"
     const val kotlin = "1.4.10"
 }
 
 object Deps {
     object Gradle {
-        const val plugin = "com.android.tools.build:gradle:4.2.0-alpha13"
+        const val plugin = "com.android.tools.build:gradle:4.2.0-alpha15"
+    }
+
+    object Maverick {
+        const val core = "com.airbnb.android:mvrx:2.0.0-beta2"
     }
     object Coroutines {
         private const val version = "1.3.9"
@@ -27,6 +31,9 @@ object Deps {
 
         const val core = "androidx.core:core-ktx:1.3.2"
         const val appCompat = "androidx.appcompat:appcompat:1.2.0"
+        const val composeNavigation = "androidx.navigation:navigation-compose:1.0.0-alpha01"
+        const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01"
+
 
         object Compose {
             object Ui {

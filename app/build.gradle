@@ -4,6 +4,7 @@ import com.ericampire.android.demo.compose.Version
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -45,7 +46,6 @@ android {
 dependencies {
 
     implementation Deps.Kotlin.stdlib
-    implementation Deps.Kotlin.extensions
 
     implementation Deps.AndroidX.core
     implementation Deps.AndroidX.appCompat
@@ -53,34 +53,24 @@ dependencies {
     implementation Deps.Coroutines.core
     implementation Deps.Coroutines.android
 
-    // Compose
+    implementation Deps.AndroidX.composeNavigation
+    implementation Deps.AndroidX.lifecycleRuntime
+
+    implementation Deps.Maverick.core
+
     implementation Deps.AndroidX.Compose.Ui.core
     implementation Deps.AndroidX.Compose.Ui.tooling
-
     implementation Deps.AndroidX.Compose.Runtime.core
     implementation Deps.AndroidX.Compose.Runtime.liveData
     implementation Deps.AndroidX.Compose.Runtime.rxJava
-
     implementation Deps.AndroidX.Compose.Foundation.core
-    implementation Deps.AndroidX.Compose.Foundation.layout
-
     implementation Deps.AndroidX.Compose.Material.core
     implementation Deps.AndroidX.Compose.Material.iconsCore
     implementation Deps.AndroidX.Compose.Material.iconsExtended
 
-
-    // UI Tests
-    // androidTestImplementation "androidx.ui:ui-test:$compose_version"
+    def nav_version = "2.3.1"
+    api "androidx.navigation:navigation-fragment-ktx:$nav_version"
 
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01'
-
-    implementation "dev.chrisbanes.accompanist:accompanist-coil:0.2.2"
-    implementation 'com.github.zsoltk:compose-router:0.19.0'
-
-    // --
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
+    implementation "dev.chrisbanes.accompanist:accompanist-coil:0.3.3.1"
 }

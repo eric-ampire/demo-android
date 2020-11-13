@@ -1,8 +1,9 @@
 package com.ericampire.android.demo.compose.navigation
 
-import com.ericampire.android.demo.compose.model.User
+import androidx.annotation.StringRes
+import com.ericampire.android.demo.compose.R
 
-sealed class Routing {
-    object Home : Routing()
-    data class DetailUser(val user: User) : Routing()
+sealed class Screen(val route: String, @StringRes val resourceId: Int) {
+    object ListUser : Screen("list-user", R.string.list_user)
+    object DetailUser : Screen("detail-user", R.string.detail_user)
 }
