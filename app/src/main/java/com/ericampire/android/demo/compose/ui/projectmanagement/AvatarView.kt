@@ -2,7 +2,6 @@ package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -15,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.DensityAmbient
 import androidx.compose.ui.unit.dp
 import com.ericampire.android.demo.compose.model.User
-import dev.chrisbanes.accompanist.coil.CoilImage
+import dev.chrisbanes.accompanist.glide.GlideImage
 
 @Composable
 fun AvatarView(
@@ -24,7 +23,7 @@ fun AvatarView(
     onUserClick: (User) -> Unit
 ) {
 
-    CoilImage(
+    GlideImage(
         data = user.imageForSize(with(DensityAmbient.current) { 40.dp.toIntPx() }),
         modifier = modifier
             .drawShadow(5.dp, clip = false, shape = CircleShape)

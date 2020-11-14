@@ -4,11 +4,18 @@ package com.ericampire.android.demo.compose
 object Version {
     const val compose = "1.0.0-alpha07"
     const val kotlin = "1.4.10"
+    const val accompanist = "0.3.3.1"
 }
 
 object Deps {
+    const val materialDesign = "com.google.android.material:material:1.2.1"
     object Gradle {
         const val plugin = "com.android.tools.build:gradle:4.2.0-alpha15"
+    }
+
+    object Accompanist {
+        const val glide = "dev.chrisbanes.accompanist:accompanist-glide:${Version.accompanist}"
+        const val insets = "dev.chrisbanes.accompanist:accompanist-insets:${Version.accompanist}"
     }
 
     object Maverick {
