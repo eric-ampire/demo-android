@@ -12,7 +12,7 @@ val repositoryModule = module {
 }
 
 val netModule = module {
-    fun provideKoinClient(): HttpClient {
+    fun provideKtorClient(): HttpClient {
         return HttpClient(Android) {
             install(JsonFeature) {
                 serializer = KotlinxSerializer()
@@ -24,5 +24,5 @@ val netModule = module {
         }
     }
 
-    single { provideKoinClient() }
+    single { provideKtorClient() }
 }
