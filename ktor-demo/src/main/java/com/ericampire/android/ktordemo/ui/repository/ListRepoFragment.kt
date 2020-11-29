@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.ericampire.android.ktordemo.R
 
 
-class RepositoryFragment : Fragment(R.layout.fragment_repository) {
+class ListRepoFragment : Fragment(R.layout.fragment_repository) {
 
 
 
