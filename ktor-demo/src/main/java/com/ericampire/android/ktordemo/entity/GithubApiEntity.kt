@@ -3,7 +3,7 @@ package com.ericampire.android.ktordemo.entity
 import kotlinx.serialization.*
 
 @Serializable
-data class Example (
+data class Repository (
     @SerialName("id") var id : Int,
     @SerialName("node_id") var nodeId : String,
     @SerialName("name") var name : String,
