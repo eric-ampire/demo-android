@@ -1,9 +1,10 @@
 package com.ericampire.android.demo.compose.ui.projectmanagement
 
-import androidx.compose.foundation.*
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -42,5 +43,5 @@ fun ProjectProgressIndicatorView(progress: Float, status: Status, modifier: Modi
 @Composable
 @Preview
 fun ProgressIndicatorViewPreview() {
-    ProjectProgressIndicatorView(0.45f, Status.New)
+    ProjectProgressIndicatorView(0.60f, Status.New)
 }
