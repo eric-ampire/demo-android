@@ -3,6 +3,7 @@ import com.ericampire.android.demo.compose.Deps
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlinx-serialization'
 }
 
 android {

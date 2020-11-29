@@ -52,6 +52,7 @@ object Deps {
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Version.kotlin}"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.kotlin}"
         const val extensions = "org.jetbrains.kotlin:kotlin-android-extensions:${Version.kotlin}"
+        const val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:${Version.kotlin}"
     }
 
     object AndroidX {

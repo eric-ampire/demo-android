@@ -7,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath Deps.Kotlin.gradlePlugin
+        classpath Deps.Kotlin.kotlinSerialization
         classpath Deps.Gradle.plugin
     }
 }
