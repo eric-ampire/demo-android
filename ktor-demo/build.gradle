@@ -48,6 +48,7 @@ dependencies {
     implementation Deps.AndroidX.lifecycleRuntime
 
     implementation Deps.Maverick.core
+    implementation Deps.materialDesign
 
     testImplementation Deps.AndroidX.Test.junit
 
@@ -59,6 +60,7 @@ dependencies {
     implementation Deps.Ktor.cio
     implementation Deps.Ktor.serialization
     implementation Deps.Ktor.logging
+//    implementation Deps.Ktor.testing
 
     implementation Deps.Koin.android
     implementation Deps.Koin.scope

@@ -56,7 +56,7 @@ dependencies {
     implementation Deps.AndroidX.composeNavigation
     implementation Deps.AndroidX.lifecycleRuntime
 
-    implementation Deps.Maverick.core
+    implementation Deps.materialDesign
 
     implementation Deps.AndroidX.Compose.Ui.core
     implementation Deps.AndroidX.Compose.Ui.tooling

@@ -28,6 +28,7 @@ object Deps {
         const val core = "io.ktor:ktor-client-core:$version"
         const val android = "io.ktor:ktor-client-android:$version"
         const val cio = "io.ktor:ktor-client-cio:$version"
+        const val testing = "io.ktor:ktor-client-testing:$version"
         const val serialization = "io.ktor:ktor-client-serialization-jvm:$version"
         const val logging = "io.ktor:ktor-client-logging-jvm:$version"
     }

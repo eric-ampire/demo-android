@@ -10,7 +10,7 @@ data class Repository (
     @SerialName("full_name") var fullName : String,
     @SerialName("private") var private : Boolean,
     @SerialName("owner") var owner : Owner,
-    @SerialName("description") var description : String,
+    @SerialName("description") var description : String?,
     @SerialName("fork") var fork : Boolean,
 )
 
