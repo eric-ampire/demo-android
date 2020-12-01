@@ -7,6 +7,7 @@ import io.ktor.client.engine.android.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
 import io.ktor.client.features.logging.*
+import kotlinx.serialization.json.Json as KotlinJson
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -22,7 +23,12 @@ val netModule = module {
     fun provideKtorClient(): HttpClient {
         return HttpClient(Android) {
             install(JsonFeature) {
-                serializer = KotlinxSerializer()
+                val json = KotlinJson {
+                    isLenient = true
+                    ignoreUnknownKeys = true
+                    prettyPrint = true
+                }
+                serializer = KotlinxSerializer(json)
             }
             install(Logging) {
                 logger = Logger.DEFAULT
