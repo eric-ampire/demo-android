@@ -2,16 +2,16 @@ package com.ericampire.android.demo.compose
 
 
 object Version {
-    const val compose = "1.0.0-alpha07"
-    const val kotlin = "1.4.10"
-    const val accompanist = "0.3.3.1"
+    const val compose = "1.0.0-alpha08"
+    const val kotlin = "1.4.20"
+    const val accompanist = "0.4.0"
     const val koin = "2.1.6"
 }
 
 object Deps {
     const val materialDesign = "com.google.android.material:material:1.2.1"
     object Gradle {
-        const val plugin = "com.android.tools.build:gradle:4.2.0-alpha15"
+        const val plugin = "com.android.tools.build:gradle:7.0.0-alpha01"
     }
 
     object Koin {
@@ -77,7 +77,8 @@ object Deps {
         object Compose {
             object Ui {
                 const val core = "androidx.compose.ui:ui:${Version.compose}"
-                const val tooling = "androidx.ui:ui-tooling:${Version.compose}"
+                const val uiTest = "androidx.compose.ui:ui-test:${Version.compose}"
+                const val tooling = "androidx.compose.ui:ui-tooling:${Version.compose}"
             }
 
             object Foundation {

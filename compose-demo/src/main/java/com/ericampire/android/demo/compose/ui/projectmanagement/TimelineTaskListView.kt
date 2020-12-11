@@ -17,7 +17,7 @@ fun TimelineTaskListView(tasks: List<Task>) {
         modifier = Modifier.background(Color(0xFFF1F5FE), RoundedCornerShape(topLeft = 40.dp))
             .fillMaxSize()
             .padding(top = 40.dp),
-        children = {
+        content = {
             tasks.forEachIndexed { index, task ->
                 TaskCardView(task = task)
             }

@@ -8,8 +8,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.model.Status
 import com.ericampire.android.demo.compose.style.typography
 import kotlin.math.roundToInt
@@ -23,8 +23,8 @@ fun ProjectProgressIndicatorView(progress: Float, status: Status, modifier: Modi
             shape = CircleShape,
             color = status.color.copy(alpha = 0.3f)
         ),
-        alignment = Alignment.Center,
-        children = {
+        contentAlignment = Alignment.Center,
+        content = {
             CircularProgressIndicator(
                 modifier = modifier,
                 progress = progress,

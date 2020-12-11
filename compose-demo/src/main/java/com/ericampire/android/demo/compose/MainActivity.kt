@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.ui.platform.setContent
 import com.ericampire.android.demo.compose.style.DemoComposeTheme
-import com.ericampire.android.demo.compose.ui.foodrecipe.RootView
 import com.ericampire.android.demo.compose.ui.projectmanagement.TimelineScreenView
 
 
@@ -15,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             DemoComposeTheme {
-                RootView()
+                TimelineScreenView(project = mockProject)
             }
         }
     }

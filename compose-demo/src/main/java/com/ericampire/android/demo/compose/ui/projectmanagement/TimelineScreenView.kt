@@ -2,11 +2,11 @@ package com.ericampire.android.demo.compose.ui.projectmanagement
 
 import androidx.compose.foundation.ScrollableColumn
 import androidx.compose.runtime.Composable
-import androidx.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.mockProject
 import com.ericampire.android.demo.compose.model.Project
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 fun TimelineScreenViewPreview() {
     TimelineScreenView(project = mockProject)

@@ -6,9 +6,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Devices
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.ui.tooling.preview.Devices
-import androidx.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.model.Task
 import com.ericampire.android.demo.compose.style.darkBlue
 import com.ericampire.android.demo.compose.style.typography

@@ -1,11 +1,11 @@
 package com.ericampire.android.demo.compose.ui.projectmanagement
 
-import androidx.compose.foundation.Text
+import androidx.compose.material.Text
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.ui.tooling.preview.Preview
 import com.ericampire.android.demo.compose.mockProject
 import com.ericampire.android.demo.compose.model.Project
 import com.ericampire.android.demo.compose.style.typography
@@ -26,7 +26,7 @@ fun HeaderView(project: Project) {
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
             modifier = Modifier.fillMaxWidth(),
-            children = {
+            content = {
                 AvatarListView(
                     users = project.users,
                     onAddClick = {
@@ -48,7 +48,7 @@ fun HeaderView(project: Project) {
 }
 
 @Composable
-@Preview(showDecoration = true)
+@Preview(showSystemUi = true)
 fun HeaderViewPreview() {
     HeaderView(project = mockProject)
 }
