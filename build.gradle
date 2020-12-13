@@ -9,6 +9,7 @@ buildscript {
         classpath Deps.Kotlin.gradlePlugin
         classpath Deps.Kotlin.kotlinSerialization
         classpath Deps.Gradle.plugin
+        classpath Deps.Hilt.gradlePlugin
     }
 }
 

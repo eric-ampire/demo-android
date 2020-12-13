@@ -3,7 +3,9 @@ import com.ericampire.android.demo.compose.Deps
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'kotlinx-serialization'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -60,7 +62,9 @@ dependencies {
     implementation Deps.Ktor.cio
     implementation Deps.Ktor.serialization
     implementation Deps.Ktor.logging
-//    implementation Deps.Ktor.testing
+
+    implementation Deps.Hilt.android
+    kapt Deps.Hilt.compiler
 
     implementation Deps.Koin.android
     implementation Deps.Koin.scope
