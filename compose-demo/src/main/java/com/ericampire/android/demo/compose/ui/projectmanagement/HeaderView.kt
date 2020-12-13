@@ -13,7 +13,7 @@ import com.ericampire.android.demo.compose.style.typography
 @Composable
 fun HeaderView(project: Project) {
     Column(modifier = Modifier
-        .padding(top = 100.dp)
+        .padding(top = 32.dp)
         .padding(horizontal = 20.dp, vertical = 16.dp)) {
 
         Text(text = project.title, style = typography.h1)

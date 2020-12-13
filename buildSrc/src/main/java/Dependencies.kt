@@ -6,6 +6,9 @@ object Version {
     const val kotlin = "1.4.20"
     const val accompanist = "0.4.0"
     const val koin = "2.1.6"
+    const val ktor = "1.4.0"
+    const val hilt = "2.28-alpha"
+    const val hiltAndroidX = "1.0.0-alpha01"
 }
 
 object Deps {
@@ -22,15 +25,19 @@ object Deps {
         const val test = "org.koin:koin-test:${Version.koin}"
     }
 
-    object Ktor {
-        private const val version = "1.4.0"
+    object Hilt {
+        const val android = "com.google.dagger:hilt-android:${Version.hilt}"
+        const val compiler = "com.google.dagger:hilt-android-compiler:${Version.hilt}"
+        const val gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Version.hilt}"
+    }
 
-        const val core = "io.ktor:ktor-client-core:$version"
-        const val android = "io.ktor:ktor-client-android:$version"
-        const val cio = "io.ktor:ktor-client-cio:$version"
-        const val testing = "io.ktor:ktor-client-testing:$version"
-        const val serialization = "io.ktor:ktor-client-serialization-jvm:$version"
-        const val logging = "io.ktor:ktor-client-logging-jvm:$version"
+    object Ktor {
+        const val core = "io.ktor:ktor-client-core:${Version.ktor}"
+        const val android = "io.ktor:ktor-client-android:${Version.ktor}"
+        const val cio = "io.ktor:ktor-client-cio:${Version.ktor}"
+        const val testing = "io.ktor:ktor-client-testing:${Version.ktor}"
+        const val serialization = "io.ktor:ktor-client-serialization-jvm:${Version.ktor}"
+        const val logging = "io.ktor:ktor-client-logging-jvm:${Version.ktor}"
     }
 
 
@@ -60,8 +67,14 @@ object Deps {
 
         const val core = "androidx.core:core-ktx:1.3.2"
         const val appCompat = "androidx.appcompat:appcompat:1.2.0"
-        const val composeNavigation = "androidx.navigation:navigation-compose:1.0.0-alpha01"
+        const val composeNavigation = "androidx.navigation:navigation-compose:1.0.0-alpha03"
         const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01"
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.5"
+
+        object Hilt {
+            const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Version.hiltAndroidX}"
+            const val compiler = "androidx.hilt:hilt-compiler:${Version.hiltAndroidX}"
+        }
 
         object Test {
             const val ext = "androidx.test.ext:junit:1.1.1"
