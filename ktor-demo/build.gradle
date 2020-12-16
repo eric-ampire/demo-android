@@ -8,6 +8,10 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 android {
     compileSdkVersion 30
 
@@ -74,4 +78,7 @@ dependencies {
     implementation Deps.Koin.scope
     implementation Deps.Koin.viewModel
     implementation Deps.Koin.fragment
+
+    implementation Deps.Epoxy.core
+    kapt Deps.Epoxy.processor
 }
