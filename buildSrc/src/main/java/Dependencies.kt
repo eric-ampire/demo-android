@@ -9,12 +9,18 @@ object Version {
     const val ktor = "1.4.0"
     const val hilt = "2.28-alpha"
     const val hiltAndroidX = "1.0.0-alpha01"
+    const val epoxy = "4.3.1"
 }
 
 object Deps {
     const val materialDesign = "com.google.android.material:material:1.2.1"
     object Gradle {
-        const val plugin = "com.android.tools.build:gradle:7.0.0-alpha01"
+        const val plugin = "com.android.tools.build:gradle:7.0.0-alpha03"
+    }
+
+    object Epoxy {
+        const val core = "com.airbnb.android:epoxy:${Version.epoxy}"
+        const val processor = "com.airbnb.android:epoxy-processor:${Version.epoxy}"
     }
 
     object Koin {
