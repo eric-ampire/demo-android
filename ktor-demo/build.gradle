@@ -13,6 +13,10 @@ kapt {
 }
 
 android {
+    buildFeatures {
+        dataBinding true
+    }
+
     compileSdkVersion 30
 
     defaultConfig {
@@ -80,5 +84,14 @@ dependencies {
     implementation Deps.Koin.fragment
 
     implementation Deps.Epoxy.core
+    implementation Deps.Epoxy.dataBinding
+    implementation Deps.Epoxy.glidePreloading
+    implementation Deps.Epoxy.paging
     kapt Deps.Epoxy.processor
+}
+
+configurations.all {
+    resolutionStrategy {
+        forcedModules = ['org.jetbrains.kotlin:kotlin-parcelize-runtime:1.4.20']
+    }
 }

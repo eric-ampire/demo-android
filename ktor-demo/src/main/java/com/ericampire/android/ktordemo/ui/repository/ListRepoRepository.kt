@@ -13,5 +13,6 @@ class ListRepoRepository @Inject constructor(private val httpClient: HttpClient)
     suspend fun getRepository() = withContext(Dispatchers.IO) {
         val repositories = httpClient.get<List<Repository>>("https://api.github.com/repositories")
         Log.e("ListRepoRepository", repositories.toString())
+        return@withContext repositories
     }
 }

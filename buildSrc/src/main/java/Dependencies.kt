@@ -21,6 +21,9 @@ object Deps {
     object Epoxy {
         const val core = "com.airbnb.android:epoxy:${Version.epoxy}"
         const val processor = "com.airbnb.android:epoxy-processor:${Version.epoxy}"
+        const val dataBinding = "com.airbnb.android:epoxy-databinding:${Version.epoxy}"
+        const val paging = "com.airbnb.android:epoxy-paging:${Version.epoxy}"
+        const val glidePreloading = "com.airbnb.android:epoxy-glide-preloading:${Version.epoxy}"
     }
 
     object Koin {
