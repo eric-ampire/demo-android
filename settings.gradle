@@ -1,3 +1,4 @@
 rootProject.name = "demo-android"
 include ':compose-demo'
 include ':ktor-demo'
+include ':clean-arch-demo'

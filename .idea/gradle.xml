@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/clean-arch-demo" />
             <option value="$PROJECT_DIR$/compose-demo" />
             <option value="$PROJECT_DIR$/ktor-demo" />
           </set>
