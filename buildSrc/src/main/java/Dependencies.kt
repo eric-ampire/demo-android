@@ -15,7 +15,7 @@ object Version {
 object Deps {
     const val materialDesign = "com.google.android.material:material:1.2.1"
     object Gradle {
-        const val plugin = "com.android.tools.build:gradle:7.0.0-alpha03"
+        const val plugin = "com.android.tools.build:gradle:7.0.0-alpha04"
     }
 
     object Epoxy {
