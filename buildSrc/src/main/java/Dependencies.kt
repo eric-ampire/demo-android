@@ -2,8 +2,8 @@ package com.ericampire.android.demo.compose
 
 
 object Version {
-    const val compose = "1.0.0-alpha08"
-    const val kotlin = "1.4.20"
+    const val compose = "1.0.0-alpha10"
+    const val kotlin = "1.4.21"
     const val accompanist = "0.4.0"
     const val koin = "2.1.6"
     const val ktor = "1.4.0"
