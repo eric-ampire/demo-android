@@ -1,7 +1,13 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("kotlin-android-extensions")
+    id("kotlin-kapt")
+    id("kotlinx-serialization")
+    id("dagger.hilt.android.plugin")
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 android {
@@ -42,11 +48,11 @@ android {
 }
 
 dependencies {
-
     implementation(Deps.Kotlin.stdlib)
 
     implementation(Deps.AndroidX.core)
     implementation(Deps.AndroidX.appCompat)
+    implementation(Deps.AndroidX.fragmentKtx)
 
     implementation(Deps.Coroutines.core)
     implementation(Deps.Coroutines.android)
@@ -54,22 +60,40 @@ dependencies {
     implementation(Deps.AndroidX.composeNavigation)
     implementation(Deps.AndroidX.lifecycleRuntime)
 
+    implementation(Deps.Maverick.core)
     implementation(Deps.materialDesign)
 
-    implementation(Deps.AndroidX.Compose.Ui.core)
-    implementation(Deps.AndroidX.Compose.Ui.tooling)
-    implementation(Deps.AndroidX.Compose.Runtime.core)
-    implementation(Deps.AndroidX.Compose.Runtime.liveData)
-    implementation(Deps.AndroidX.Compose.Runtime.rxJava)
-    implementation(Deps.AndroidX.Compose.Foundation.core)
-    implementation(Deps.AndroidX.Compose.Material.core)
-    implementation(Deps.AndroidX.Compose.Material.iconsCore)
-    implementation(Deps.AndroidX.Compose.Material.iconsExtended)
+    testImplementation(Deps.AndroidX.Test.junit)
 
-    androidTestImplementation(Deps.AndroidX.Compose.Ui.uiTest)
+    androidTestImplementation(Deps.AndroidX.Test.ext)
+    androidTestImplementation(Deps.AndroidX.Test.Expresso.core)
 
-    implementation(Deps.Accompanist.glide)
-    implementation(Deps.Accompanist.insets)
+    implementation(Deps.Ktor.core)
+    implementation(Deps.Ktor.android)
+    implementation(Deps.Ktor.cio)
+    implementation(Deps.Ktor.serialization)
+    implementation(Deps.Ktor.logging)
 
-    implementation(Deps.materialDesign)
+    implementation(Deps.Hilt.android)
+    kapt(Deps.Hilt.compiler)
+
+    implementation(Deps.AndroidX.Hilt.viewModel)
+    kapt(Deps.AndroidX.Hilt.compiler)
+
+    implementation(Deps.Koin.android)
+    implementation(Deps.Koin.scope)
+    implementation(Deps.Koin.viewModel)
+    implementation(Deps.Koin.fragment)
+
+    implementation(Deps.Epoxy.core)
+    implementation(Deps.Epoxy.dataBinding)
+    implementation(Deps.Epoxy.glidePreloading)
+    implementation(Deps.Epoxy.paging)
+    kapt(Deps.Epoxy.processor)
+}
+
+configurations.all {
+    resolutionStrategy {
+        setForcedModules("org.jetbrains.kotlin:kotlin-parcelize-runtime:1.4.20")
+    }
 }

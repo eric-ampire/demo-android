@@ -1,6 +1,3 @@
-package com.ericampire.android.demo.compose
-
-
 object Version {
     const val compose = "1.0.0-alpha10"
     const val kotlin = "1.4.21"
